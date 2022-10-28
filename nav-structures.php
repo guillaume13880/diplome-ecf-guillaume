@@ -12,12 +12,12 @@ include './get-structures.php';
         <form method="GET">
             <div class="col d-flex">
                 <input class="form-control" type="search" name="rechercherStr" placeholder="Rechercher une structure par son nom ...." autocomplete="off">
-                <input type="submit" name="envoyer">
+                <input type="submit" name="envoyer" class="btn btn-primary">
             </div>
         </form>
             <div class="col d-flex justify-content-end align-items-center">
                 <form method="POST">
-                    <div>
+                    <div class="input-group">
                         <input type="submit" class="btn btn-primary" value="Toute" name="toute">
                         <input type="submit" class="btn btn-primary" value="Active" name="active">
                         <input type="submit" class="btn btn-primary" value="Inactive" name="inactive">                       

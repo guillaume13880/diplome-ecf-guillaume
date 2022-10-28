@@ -166,7 +166,14 @@ if (!isset($_SESSION['verif'])) {
             header span {
             color: white;
             }
-           
+           @media screen and (max-width:768px) {
+            .btn {
+                font-size: 0.8rem;
+            }
+            .nav-item {
+                font-size: 0.8rem;
+            }
+           }
             
         </style>
 
