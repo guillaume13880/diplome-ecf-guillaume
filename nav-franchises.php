@@ -16,7 +16,7 @@ include './get-franchises.php';
                     <input type="submit" name="envoyer">
                 </div>
             </form>
-            <div class="col d-flex justify-content-end align-items-center">
+            <div class="col d-flex justify-content-start align-items-center sm-justify-content-center">
                 <form method="POST">
                     <div>
                         <input type="submit" class="btn btn-primary" value="Toute" name="toute">
@@ -194,7 +194,8 @@ include './get-franchises.php';
                 }
                 header span {
                     color: white;
-                }     
+                } 
+                    
             </style>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
         <?php 
