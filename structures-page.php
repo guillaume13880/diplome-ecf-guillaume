@@ -147,8 +147,7 @@ if (!isset($_SESSION['verif'])) {
             background-repeat: no-repeat;
             color: white;
             }
-            nav {
-                
+            nav {  
                 margin: 15px;
             }
             h1 {
@@ -160,13 +159,15 @@ if (!isset($_SESSION['verif'])) {
             }
             img {
                 border-radius: 5px;
-                height: 300px;
-                
+                height: 300px;  
             }
             header span {
             color: white;
             }
            @media screen and (max-width:768px) {
+            h1 {
+               font-size: 1.2rem; 
+            }
             .btn {
                 font-size: 0.8rem;
             }
@@ -179,8 +180,6 @@ if (!isset($_SESSION['verif'])) {
            }
             
         </style>
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
