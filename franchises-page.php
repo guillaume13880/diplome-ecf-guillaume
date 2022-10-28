@@ -166,6 +166,9 @@ if (!isset($_SESSION['verif'])) {
             .nav-item {
                 font-size: 0.8rem;
             }
+            .input-group {
+                margin-top: 5px;
+            }
         }    
     </style>
 
