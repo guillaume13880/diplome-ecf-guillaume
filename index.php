@@ -50,6 +50,8 @@ session_start();
     </div>
     <style>
         body {
+            
+            
             width: 100vw;
             height: 100%;
             background-image: url("img/img_connexion.jpg");
