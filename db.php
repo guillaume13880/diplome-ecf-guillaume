@@ -9,14 +9,15 @@
 // $query_builder = TRUE;
 // Connect to  DB
 //$database = new PDO($cleardb_server, $cleardb_username, $cleardb_password);
-require_once './info.php';
+
+//require_once './info.php';
 
 //Connexion au serveur
-define('DB_HOST', $dbHost);
+define('DB_HOST', $cleardb_url["host"]);
 define('DB_PORT', '3306');
-define('DB_DATABASE', $dbBase);
-define('DB_USERNAME', $dbUsername);
-define('DB_PASSWORD', $dbPass);
+define('DB_DATABASE', substr($cleardb_url["path"],1));
+define('DB_USERNAME', $cleardb_url["user"]);
+define('DB_PASSWORD', $cleardb_url["pass"]);
 
 
 //création d'une instance de la classe PDO avec les paramètre de connexion définis
