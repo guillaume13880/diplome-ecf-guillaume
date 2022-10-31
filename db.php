@@ -13,6 +13,7 @@
 //require_once './info.php';
 
 //Connexion au serveur
+$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 define('DB_HOST', $cleardb_url["host"]);
 define('DB_PORT', '3306');
 define('DB_DATABASE', substr($cleardb_url["path"],1));
