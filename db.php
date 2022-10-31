@@ -20,9 +20,9 @@ define('DB_PASSWORD', '');
 
 
 //création d'une instance de la classe PDO avec les paramètre de connexion définis
-$database = new PDO('mysql:host='.DB_HOST.';dbname='.DB_DATABASE, DB_USERNAME, DB_PASSWORD);
+//$database = new PDO('mysql:host='.DB_HOST.';dbname='.DB_DATABASE, DB_USERNAME, DB_PASSWORD);
 
 //si on a une erreur renvoie une exeption
- $database->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+ //$database->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
   
