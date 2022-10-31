@@ -9,7 +9,7 @@
 // $query_builder = TRUE;
 // Connect to  DB
 //$database = new PDO($cleardb_server, $cleardb_username, $cleardb_password);
-require_once './.info.php';
+require_once './info.php';
 
 //Connexion au serveur
 define('DB_HOST', $dbHost);
