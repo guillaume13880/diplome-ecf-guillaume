@@ -9,14 +9,14 @@
 // $query_builder = TRUE;
 // Connect to  DB
 //$database = new PDO($cleardb_server, $cleardb_username, $cleardb_password);
-
+require_once './info.php';
 
 //Connexion au serveur
-define('DB_HOST', 'eu-cdbr-west-03.cleardb.net');
+define('DB_HOST', $dbHost);
 define('DB_PORT', '3306');
-define('DB_DATABASE', 'heroku_bef80f3743ee9c8');
-define('DB_USERNAME', 'b923c2350e2e98');
-define('DB_PASSWORD', '53598933');
+define('DB_DATABASE', $dbBase);
+define('DB_USERNAME', $dbUsername);
+define('DB_PASSWORD', $dbPass);
 
 
 //création d'une instance de la classe PDO avec les paramètre de connexion définis
