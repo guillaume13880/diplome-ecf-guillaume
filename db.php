@@ -12,11 +12,11 @@
 require_once './info.php';
 
 //Connexion au serveur
-define('DB_HOST', $dbHost);
+define('DB_HOST', $cleardb_url["host"]);
 define('DB_PORT', '3306');
-define('DB_DATABASE', $dbBase);
-define('DB_USERNAME', $dbUsername);
-define('DB_PASSWORD', $dbPass);
+define('DB_DATABASE', 'heroku_bef80f3743ee9c8');
+define('DB_USERNAME', $cleardb_url["user"]);
+define('DB_PASSWORD', $cleardb_url["pass"]);
 
 
 //création d'une instance de la classe PDO avec les paramètre de connexion définis
