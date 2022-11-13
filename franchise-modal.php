@@ -5,7 +5,8 @@ if (!isset($_SESSION['verif'])) {
     header('Location: ./index.php');
 }
 
-  
+//inclue la requete qui recupere la table structure complet
+include './get-franchises.php';  
 
     foreach ($arrayNa as $items) {
     ?>
