@@ -1,5 +1,5 @@
 <?php
-require_once './db.php';
+require './db.php';
 include './get-franchises.php';
 
 session_start();
