@@ -54,7 +54,7 @@ if (isset($sess3)) {
         } else {
             $programmer6 = 0;
         }
-        $sqlpr = "UPDATE `perm_global` SET `vendre_des_boissons`='$programmer1',`envoyer_new`='$programmer2',`gérer_les_plannings`='$programmer3',`television`='$programmer4',`music`='$programmer5',`parking`='$programmer6' WHERE 1";
+        $sqlpr = "UPDATE `perm_global` SET `vendre_des_boissons`='$programmer1',`envoyer_new`='$programmer2',`gérer_les_plannings`='$programmer3',`television`='$programmer4',`music`='$programmer5',`parking`='$programmer6' WHERE id = ?";
         $preSql = $database->prepare($sqlpr);
         $preSql->execute([$idPerm]);
         $_SESSION['changement-perm-glo'] = "Modification des permissions globals de la franchise réussis !";
