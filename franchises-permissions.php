@@ -13,13 +13,13 @@ if (!isset($_SESSION['verif'])) {
 //recupere le btn validation
 $btnValid = $_POST['btn-valid'];
 //recupere la session de l'admin
-$sess2 =  $_SESSION['id-admin'];
+$sess3 =  $_SESSION['id-admin'];
 $idPerm = (int)$_POST['id-perm-glo'];
 
 
 
 //si ces bien l'admin de connecter
-if (isset($sess2)) {
+if (isset($sess3)) {
     //au click du submit
     if (isset($btnValid)) {
         //si input est saisie = 1 sinon egal 0
