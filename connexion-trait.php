@@ -48,17 +48,17 @@ $array2 = $prepare2->fetchAll(PDO::FETCH_ASSOC);
     //SI email existe est nes pas vide  et nes pas nul 
 if (isset($email) && !empty($email))  { 
         //Si input email est === a l'email en bdd 
-        if ($email == $array[0]["email_gerant"] || $email == $array1[0]['email_gerant'] || $email == $array2[0]['email']) {
+        if ($email == $array["email_gerant"] || $email == $array1['email_gerant'] || $email == $array2['email']) {
             
             //Si password nes pas vide est nes pas nul
             if (isset($password) && !empty($password)) {
                 
                 //Si l'entrer du password est === a password en bdd
-                if (password_verify($password, $array[0]["password_gerant"]) || password_verify($password, $array1[0]["password_gerant"]) || password_verify($password, $array2[0]['password'])) {   
-                    $_SESSION['verif'] = $array[0]['email_gerant'] || $array1[0]['email_gerant'] || $array2[0]['email'];
+                if (password_verify($password, $array["password_gerant"]) || password_verify($password, $array1["password_gerant"]) || password_verify($password, $array2['password'])) {   
+                    $_SESSION['verif'] = $array['email_gerant'] || $array1['email_gerant'] || $array2['email'];
                     //cree une session avec l'id de            
                     
-                    $_SESSION['id-admin'] = $array2[0]['id'];
+                    $_SESSION['id-admin'] = $array2['id'];
                     //redirige vers la page franchises
                     header('Location: ./franchises-page.php');
 
