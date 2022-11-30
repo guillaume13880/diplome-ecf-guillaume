@@ -64,7 +64,6 @@ include './get-franchises.php';
                         </form>
                     </p>
                 </div>
-
                
                 <div class="card-footer accordion accordion-flush d-grid" id="accordionFlushExample">
                     <div class="accordion-item">
@@ -82,16 +81,34 @@ include './get-franchises.php';
                                 ?>
                                 <ul class="list-group">
                                     <form method="POST" id="form-perm-true" action="./franchises-permissions.php">
-                                        <li class="list-group-item">                                             
-                                            <input type="checkbox" name="programmer1"> Vendre des boissons <br>
-                                            <input type="hidden" name="id-perm-glo" value="<?= $items['FK_perm_global']?>">
+                                        
+                                        <li class="list-group-item">
+                                             <?php
+                                             //var_dump($items['FK_perm_global']['vendre_des_boissons']);
+                                                //var_dump($items['FK_perm_global']);
+                                                //foreach ($arrayPerm as $permG) {
+                                                    //var_dump($permG['vendre_des_boissons']);
+                                                    //$arrayPerm[0]['vendre_des_boissons'] == 1
+                                                    if ($items['FK_perm_global']['vendre_des_boissons'] == 1) {
+                                                        ?>
+                                                            <input type="checkbox" name="programmer1" checked> Vendre des boissons <br>
+                                                            <input type="hidden" name="id-perm-glo" value="<?= $items['FK_perm_global']?>">
+                                                        <?php
+                                                    } else {
+                                                        ?>
+                                                            <input type="checkbox" name="programmer1"> Vendre des boissons <br>
+                                                            <input type="hidden" name="id-perm-glo" value="<?= $items['FK_perm_global']?>">
+                                                        <?php
+                                                    }
+                                                //}
+                                             ?>
                                         </li> 
 
                                         <li class="list-group-item">
-                                            <input type="checkbox" name="programmer2"> Envoyer new <br>
+                                            <input type="checkbox" name="programmer2" > Envoyer new <br>
                                             <input type="hidden" name="id-perm-glo" value="<?= $items['FK_perm_global']?>">
                                         </li> 
-
+                                        
                                         <li class="list-group-item">
                                             <input type="checkbox" name="programmer3"> Gérer les plannings <br>
                                             <input type="hidden" name="id-perm-glo" value="<?= $items['FK_perm_global']?>">  
@@ -123,8 +140,12 @@ include './get-franchises.php';
                         </div>
                     </div>
                 </div>
+            
             </div>
         </div>
+       
     <?php
-    }        
+    }
+   
+            
 ?>

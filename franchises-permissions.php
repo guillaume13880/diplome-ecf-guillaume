@@ -25,7 +25,6 @@ if (isset($sess3)) {
         //si input est saisie = 1 sinon egal 0
         if (isset($_POST['programmer1'])) {
             $programmer1 = 1;
-            
         } else {
             $programmer1 = 0;
         }
