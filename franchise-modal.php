@@ -8,6 +8,7 @@ if (!isset($_SESSION['verif'])) {
 //inclue la requete qui recupere la table structure complet
 include './get-franchises.php';  
 
+
     foreach ($arrayNa as $items) {
     ?>
         
@@ -58,11 +59,15 @@ include './get-franchises.php';
                         <li>Email du gérant : <br><?php  echo $items['email_gerant'] ?></li>
                                                                                                  
                     </ul>
-                    <p class="card-text ">
-                        <form class="text-center" action="./structures-page.php" method="POST">
+                    <div class="card-text d-flex flex-wrap justify-content-center ">
+                        <form class="text-center me-2" action="./structures-page.php" method="POST" >
                             <input type="submit" name="btnConsulter" class="btn btn-primary" value="Consulter le groupe n°<?= $items['FK_perm_global']?>">
                         </form>
-                    </p>
+                        <form  action="#####" method="POST">
+                            <input type="submit" name="btnDelete" class="btn btn-danger" value="Supprimer">
+                            <input type="hidden" value="<?= $items['FK_perm_global']?>">
+                        </form> 
+                    </div>
                 </div>
                
                 <div class="card-footer accordion accordion-flush d-grid" id="accordionFlushExample">
