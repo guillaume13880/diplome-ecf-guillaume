@@ -100,6 +100,20 @@ if (!isset($_SESSION['verif'])) {
                 </div>    
             <?php
         }
+
+        //si une franchise est supprimer affiche une modale d'info de validation
+        if (isset($_SESSION['delete-fr'])) {
+            ?>
+                <div class="container">
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">                                           
+                        <?php echo $_SESSION['delete-fr'] ?>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                </div>    
+            <?php
+        }
+
+        
             ?>
 
     <h1 class="text-center">Nos Partenaires</h1>  
