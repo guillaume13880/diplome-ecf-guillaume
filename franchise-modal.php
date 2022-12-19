@@ -64,8 +64,8 @@ include './get-franchises.php';
                             <input type="submit" name="btnConsulter" class="btn btn-primary" value="Consulter le groupe n°<?= $items['FK_perm_global']?>">
                         </form>
                         <form  action="./deleteFr.php" method="POST">
-                            <input type="submit" name="btnDelete" class="btn btn-danger" value="Supprimer">
                             <input type="hidden" name="id-card-sup" value="<?= $items['FK_perm_global']?>">
+                            <input type="submit" name="btnDelete" class="btn btn-danger" value="Supprimer">
                         </form> 
                     </div>
                 </div>
