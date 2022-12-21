@@ -63,10 +63,9 @@ include './get-franchises.php';
                         <form class="text-center me-2" action="./structures-page.php" method="POST" >
                             <input type="submit" name="btnConsulter" class="btn btn-primary" value="Consulter le groupe n°<?= $items['FK_perm_global']?>">
                         </form>
-                        <form  action="./deleteFr.php" method="POST">
-                            <input type="hidden" name="id-card-sup" value="<?= $items['FK_perm_global']?>">
-                            <input type="submit" name="btnDelete" class="btn btn-danger" value="Supprimer">
-                        </form> 
+                        <!-- bouton supprimer -->
+                        <a href="./deleteFr.php?id=<?php echo $items['id'];?>" class="btn btn-danger" onclick="return confirm('Etes vous sure?')">Supprimer</a>
+
                     </div>
                 </div>
                
