@@ -182,11 +182,16 @@ include './get-franchises.php';
                     margin: 15px;
                 }
                 h1 {
-                    margin: 100px;
+                    margin: 60px;
+                    font-size: 2.5rem; 
                 }
                 
                 .card {
                     color: black;
+                    transition:transform .4s ;
+                }
+                .card:hover {
+                    transform: scale(1.02);
                 }
                 img {
                     border-radius: 5px;
@@ -197,7 +202,8 @@ include './get-franchises.php';
                 }
                 @media screen and (max-width:768px) {
                     h1 {
-                    font-size: 1.2rem; 
+                        margin: 60px;
+                        font-size: 2.5rem; 
                     }
                     .btn {
                         font-size: 0.8rem;
@@ -234,11 +240,17 @@ include './get-franchises.php';
                     margin: 15px;
                 }
                 h1 {
-                    margin: 100px;
+                    margin: 150px;
+                    font-family: 'Great Vibes', cursive;
+                    font-size: 4em;
                 }
                 
                 .card {
                     color: black;
+                    transition:transform .4s ;
+                }
+                .card:hover {
+                    transform: scale(1.02);
                 }
                 img {
                     border-radius: 5px;
@@ -249,7 +261,8 @@ include './get-franchises.php';
                 } 
                 @media screen and (max-width:768px) {
                     h1 {
-                    font-size: 1.2rem; 
+                        margin: 60px;
+                        font-size: 2.5rem;  
                     }
                     .btn {
                         font-size: 0.8rem;
@@ -420,7 +433,9 @@ include './get-franchises.php';
                     margin: 15px;
                 }
                 h1 {
-                    margin: 100px;
+                    margin: 150px;
+                    font-family: 'Great Vibes', cursive;
+                    font-size: 4em;
                 }
                 .container {
                     margin-bottom: 15px;
@@ -428,7 +443,11 @@ include './get-franchises.php';
                 
                 .card {
                     color: black;
+                    transition:transform .4s ;
                 
+                }
+                .card:hover {
+                    transform: scale(1.02);
                 }
                 img {
                     border-radius: 5px;
@@ -439,7 +458,8 @@ include './get-franchises.php';
                 } 
                 @media screen and (max-width:768px) {
                     h1 {
-                    font-size: 1.2rem; 
+                        margin: 60px;
+                        font-size: 2.5rem;  
                     }
                     .btn {
                         font-size: 0.8rem;
@@ -604,7 +624,9 @@ include './get-franchises.php';
                     margin: 15px;
                 }
                 h1 {
-                    margin: 100px;
+                    margin: 150px;
+                    font-family: 'Great Vibes', cursive;
+                    font-size: 4em;
                 }
                 .container {
                     margin-bottom: 15px;
@@ -612,7 +634,11 @@ include './get-franchises.php';
                 
                 .card {
                     color: black;
+                    transition:transform .4s ;
                    
+                }
+                .card:hover {
+                    transform: scale(1.02);
                 }
                 img {
                     border-radius: 5px;
@@ -623,7 +649,8 @@ include './get-franchises.php';
                 } 
                 @media screen and (max-width:768px) {
                     h1 {
-                    font-size: 1.2rem; 
+                        margin: 60px;
+                        font-size: 2.5rem;  
                     }
                     .btn {
                         font-size: 0.8rem;

@@ -15,6 +15,9 @@ if (!isset($_SESSION['verif'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>Structures</title>
 </head>
@@ -151,11 +154,19 @@ if (!isset($_SESSION['verif'])) {
                 margin: 15px;
             }
             h1 {
-            margin: 100px;
+                margin: 150px;
+                font-family: 'Great Vibes', cursive;
+                font-size: 4em;
             }
             
             main {
                 color: black;
+            }
+            .card{
+                transition:transform .4s ;
+            }
+            .card:hover {
+                transform: scale(1.02);
             }
             img {
                 border-radius: 5px;
