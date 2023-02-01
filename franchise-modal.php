@@ -64,7 +64,7 @@ include './get-franchises.php';
                             <input type="submit" name="btnConsulter" class="btn btn-primary" value="Consulter le groupe n°<?= $items['FK_perm_global']?>">
                         </form>
                         <!-- bouton supprimer -->
-                        <a href="./deleteFr.php?id=<?php echo $items['id'];?>" class="btn btn-danger" onclick="return confirm('Etes vous sure?')">Supprimer</a>
+                        <a href="./deleteFr.php?id=<?php echo $items['id'];?>" class="btn btn-danger" onclick="return confirm('Voulez-vous vraiment supprimer cet franchise ?')">Supprimer</a>
 
                     </div>
                 </div>
