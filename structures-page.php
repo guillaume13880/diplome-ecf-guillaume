@@ -177,7 +177,8 @@ if (!isset($_SESSION['verif'])) {
             }
            @media screen and (max-width:768px) {
             h1 {
-               font-size: 1.2rem; 
+                margin: 60px;
+               font-size: 2.5rem; 
             }
             .btn {
                 font-size: 0.8rem;

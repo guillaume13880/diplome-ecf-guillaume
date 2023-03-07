@@ -27,8 +27,8 @@ if (!isset($_SESSION['verif'])) {
       </a>
 
       <ul class="nav nav-pills mx-5">
-        <li class="nav-item"><a href="./franchises-page.php" class="nav-link active" aria-current="page">Nos franchises</a></li>
-        <li class="nav-item"><a href="./structures-page.php" class="nav-link">Nos structures</a></li>
+        <li class="nav-item"><a href="./franchises-page.php" class="nav-link" aria-current="page">Nos franchises</a></li>
+        <li class="nav-item"><a href="./structures-page.php" class="nav-link active">Nos structures</a></li>
       </ul>
     </header>
     <div class="login-form">
